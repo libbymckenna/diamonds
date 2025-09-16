@@ -1,6 +1,6 @@
 ---
 title: "Diamonds Test"
-author: "Libby McKenna"
+author: "Libby  McKenna"
 format:
   html:
     toc: true
