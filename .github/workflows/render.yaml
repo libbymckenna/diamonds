@@ -26,7 +26,6 @@ jobs:
         run: |
           Rscript -e 'install.packages("tidyverse")'
           Rscript -e 'install.packages("ggplot2")'
-          # Add any other packages you use
 
       - name: Render Quarto
         run: |
