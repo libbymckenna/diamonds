@@ -22,7 +22,13 @@ jobs:
         run: |
           Rscript -e 'install.packages(c("ggplot2", "rmarkdown", "knitr"))'
 
-
-
       - name: Render Quarto
-        run: quarto render diamonds_test.qmd --output-dir=html
+        run: quarto render diamonds_test.qmd --output-dir=docs
+
+      - name: Commit rendered HTML
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add docs/
+          git commit -m "Publish rendered Quarto doc to GitHub Pages"
+          git push
