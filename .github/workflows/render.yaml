@@ -19,9 +19,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install R packages
-        run: |
-          Rscript -e 'install.packages("tidyverse")'
-          Rscript -e 'install.packages("ggplot2")'
+        run: Rscript -e 'install.packages("ggplot2")'
 
       - name: Render Quarto
         run: quarto render diamonds_test.qmd --output-dir=html
