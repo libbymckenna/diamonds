@@ -1,8 +1,6 @@
----
-title: "diamonds plot"
-format: html
-editor: visual
----
+------------------------------------------------------------------------
+
+title: "Diamonds Test" author: "Libby McKenna" format: html: toc: true code-fold: false execute: echo: true ---
 
 ## Quarto
 
