@@ -2,9 +2,8 @@ name: Render Quarto Document
 
 on:
   push:
-    paths:
-      - '**.qmd'
-      - '.github/workflows/render.yml'
+    branches:
+      - main
 
 jobs:
   render:
